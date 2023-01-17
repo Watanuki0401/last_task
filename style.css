@@ -19,6 +19,11 @@ a {
     grid-template-columns: 1fr 3fr 1fr;
 }
 
+.H_title {
+  display: flex;
+  align-items: center;
+}
+
 .H_menu {
     display: grid;
     place-items: center;
