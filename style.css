@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #F3EFE0;
+    font-size: 1.3rem;
+}
+
+.header {
+    padding: 1.5rem;
+    background-color: #222222;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.H_menu {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 0.9fr 0.5fr 1fr 0.8fr;
+}
+
+.H_links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: right;
+}
+
+@media screen and (max-width: 700px) {
+    .H_menu, .H_links{
+        display: none;
+    }
+}
+
+.HBGBTN {
+  display: flex;
+  justify-self: flex-end;
+}
+
+.trigger,
+.trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+.trigger {
+  position: relative;
+  width: 2.5rem;
+  height: 2.2rem;
+  background: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;  
+}
+.trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+.trigger span:nth-of-type(1) {
+  top: 0;
+}
+.trigger span:nth-of-type(2) {
+  top: 1rem;
+}
+.trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+.trigger.active span:nth-of-type(1) {
+  transform: translateY(1rem) rotate(-45deg);
+}
+.trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.trigger.active span:nth-of-type(3) {
+ transform: translateY(-1rem) rotate(45deg);
+}
