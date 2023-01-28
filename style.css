@@ -208,7 +208,6 @@ h1 {
   position: relative;
   display: grid;
   grid-template-rows: 130px 1fr;
-  height:100vh;
   width: 95%;
   margin: 0 auto;
   background-image: linear-gradient(150deg, rgba(0, 90, 141, 1) 14%, rgba(46, 197, 228, 1) 60%, rgba(141, 240, 52, 1) 92%);
@@ -224,8 +223,37 @@ h1 {
   margin: 0 auto;
 }
 
+.hobby ul.new{
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.book {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.book img {
+  height: 300px;
+  width: auto;
+}
+
+.interest {
+  display: grid;
+}
+
+.interest ul {
+  display: grid;
+}
+
 .contact {
+  position: relative;
   height: 100vh;
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  background-color: #d3d3d3;
 }
 
 .wf-roundedmplus1c {
@@ -238,3 +266,9 @@ h1 {
   100%{background-position:75% 75%}
 }
 
+.form {
+  text-align: center;
+  margin: auto 0;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 20px 2fr 1fr 8fr 20px;
+}
