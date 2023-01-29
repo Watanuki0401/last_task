@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
     <title>Last task | main</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <script src="https://kit.fontawesome.com/58fcb3c2a7.js" crossorigin="anonymous"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
 
@@ -31,7 +34,7 @@
         </div>
     </div>
     <div class="wrapper2">
-        <div class="home" id="Home">
+        <div class="home colom" id="Home">
             <div><h1>Last Task Home</h1></div>
             <div>
                 <p class="wf-roundedmplus1c">　このページは、最終課題の一環として作成されたものであり、Github上にて動作しています。</p>
@@ -40,17 +43,19 @@
                 <p>　また、今回までの授業活動履歴は、ヘッダーの<i class="fa-brands fa-github"></i>Githubアイコンをクリックしてもらうことで閲覧することが可能となっています。</p>
             </div>
         </div>
-        <div class="info" id="Info">
+        <div class="info colom" id="Info">
             <div><h1>INFORMATION</h1></div>
             <div>
-                <p>本最終課題では、あまりにも書くものがなかった為(切実)、趣味に関すること、連絡の取れるフォームの作成を行いました。詳細は、各カラムにて閲覧ください！<br/><br/><br/><br/>
-                p.s. 何よりも記事を考えるのが大変だった(マジで何も思いつかない)。<br></p>
+                <p>本最終課題では、あまりにも書くものがなかった為(切実)、趣味に関すること、連絡の取れるフォームの作成を行いました。詳細は、各カラムにて閲覧ください！<br/>また参考にしたページはHTMLの外側にコメントアウトにて記載してあります。(F12で確認してください)<br/><br/><br/>
+                p.s. 何よりも記事を考えるのが大変だった(マジで何も思いつかない)。<br>下の見てたら時間が消えました(ただのバカ)。</p>
             </div>
             <div>
-                
+                <br><br>
+                <h2>最近見たもので凄く勉強になったもの</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fGos3wrKeHY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
-        <div class="hobby" id="Hobby">
+        <div class="hobby colom" id="Hobby">
             <div><h1>Hobby</h1></div>
             <div>
                 <div>
@@ -80,7 +85,17 @@
                         <div class="book">
                             <div>
                                 <h2>探偵はもう、死んでいる。</h2>
-                                <a href="https://mfbunkoj.jp/product/tantei_dead/322209001590.html"><img src="https://cdn.kdkw.jp/cover_500/322209/322209001590.jpg" alt="no8"></a>
+                                <ul class="slick">
+                                    <li><a href="https://mfbunkoj.jp/product/tantei_dead/321907000793.html"><img src="https://cdn.kdkw.jp/cover_500/321907/321907000793.jpg" alt="01"></a></li>
+                                    <li><a href="https://mfbunkoj.jp/product/tantei_dead/321909000819.html"><img src="https://cdn.kdkw.jp/cover_500/321909/321909000819.jpg" alt="02"></a></li>
+                                    <li><a href="https://mfbunkoj.jp/product/tantei_dead/321912000700.html"><img src="https://cdn.kdkw.jp/cover_500/321912/321912000700.jpg" alt="03"></a></li>
+                                    <li><a href="https://mfbunkoj.jp/product/tantei_dead/322007000690.html"><img src="https://cdn.kdkw.jp/cover_500/322007/322007000690.jpg" alt="04"></a></li>
+                                    <li><a href="https://mfbunkoj.jp/product/tantei_dead/322101000734.html"><img src="https://cdn.kdkw.jp/cover_500/322101/322101000734.jpg" alt="05"></a></li>
+                                    <li><a href="https://mfbunkoj.jp/product/tantei_dead/322107001132.html"><img src="https://cdn.kdkw.jp/cover_500/322107/322107001132.jpg" alt="06"></a></li>
+                                    <li><a href="https://mfbunkoj.jp/product/tantei_dead/322204000945.html"><img src="https://cdn.kdkw.jp/cover_500/322204/322204000945.jpg" alt="07"></a></li>
+                                    <li><a href="https://mfbunkoj.jp/product/tantei_dead/322209001590.html"><img src="https://cdn.kdkw.jp/cover_500/322209/322209001590.jpg" alt="08"></a></li>
+                                </ul>
+                                
                             </div>
                             <div>
                                 <br>
@@ -95,7 +110,11 @@
                         <div class="book">
                             <div>
                                 <h2>あした、裸足でこい。</h2>
-                                <a href="https://dengekibunko.jp/product/hadashidekoi/322203000070.html"><img src="https://cdn.kdkw.jp/cover_500/322203/322203000070.jpg" alt="no2"></a>
+                                <ul class="slick">
+                                    <li><a href="https://dengekibunko.jp/product/hadashidekoi/322203000069.html"><img src="https://cdn.kdkw.jp/cover_500/322203/322203000069.jpg" alt="01"></a></li>
+                                    <li><a href="https://dengekibunko.jp/product/hadashidekoi/322203000070.html"><img src="https://cdn.kdkw.jp/cover_500/322203/322203000070.jpg" alt="02"></a></li>
+                                </ul>
+                                
                             </div>
                             <div>
                                 <br>
@@ -125,10 +144,26 @@
             </div>
 
         </div>
-        <div class="contact" id="Contact">
+        <div class="contact colom" id="Contact">
             <div><h1>Contact</h1></div>
             <div class="form">
-
+                <form action="mail.js" method="post">
+                    <div class="name">
+                        <h2>Name</h2>
+                        <input type="text" name="Name" id="name">
+                    </div>
+                    <div class="Address">
+                        <h2>Address</h2>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div>
+                        <h2>Detail</h2>
+                        <textarea name="detail" id="detail" cols="5" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <button class="hoge" type="button">メーラーを起動します。</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -136,10 +171,19 @@
 </body>
 <script src="script.js"></script>
 <script src="scroll.js"></script>
+<script src="background.js"></script>
+<script src="slick_move.js"></script>
+<script src="mail.js"></script>
 </html>
 
 <!--
     参考：
+    https://b-risk.jp/blog/2020/01/slick-customize/
+    https://colorhunt.co/palettes/random
+    https://www.gradient-animator.com/
+    https://gray-code.com/javascript/remove-specified-html-element/
+    https://fonts.google.com/
+    https://www.buildinsider.net/web/jqueryref/001
 
 
 -->
